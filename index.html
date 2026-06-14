@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="site-header clean-header">
-      <a class="brand" href="#top" aria-label="Ipsos Camping Corfu home"><span>IC</span><strong>Ipsos Camping</strong></a>
+      <a class="brand clean-brand" href="#top" aria-label="Ipsos Camping Corfu home"><span class="camp-logo" aria-hidden="true">🏕️</span><strong>Ipsos Camping</strong></a>
       <nav aria-label="Main navigation">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#restaurant" data-i18n="nav.restaurant">Da Marco</a>
@@ -64,6 +64,21 @@
         <article><strong data-i18n="quick.restaurant.title">Da Marco Nearby</strong><span data-i18n="quick.restaurant.text">Restaurant close to the camping area.</span></article>
       </section>
 
+      <section class="clean-media reveal" aria-label="A small look at the place">
+        <figure class="media-tile media-photo">
+          <img src="assets/images/ipsos-camping-entrance.webp" alt="Ipsos Camping entrance sign in Corfu" loading="lazy" onerror="this.closest('figure').remove()" />
+          <figcaption>Real entrance</figcaption>
+        </figure>
+        <figure class="media-tile media-photo wide">
+          <img src="assets/images/camper-green-area.webp" alt="Green camper area with trees at Ipsos Camping" loading="lazy" onerror="this.closest('figure').remove()" />
+          <figcaption>Green camper area</figcaption>
+        </figure>
+        <figure class="media-tile media-video">
+          <video src="assets/videos/camper-green-area-loop.mp4" poster="assets/posters/camper-green-area-poster.webp" muted loop playsinline preload="metadata" onerror="this.closest('figure').remove()"></video>
+          <figcaption>Camping mood</figcaption>
+        </figure>
+      </section>
+
       <section class="clean-section reveal" id="about">
         <p class="eyebrow" data-i18n="about.eyebrow">About</p>
         <h2 data-i18n="about.title">A simple green base in Ipsos</h2>
@@ -103,18 +118,6 @@
     </footer>
 
     <div class="clean-bottom-cta"><a href="tel:+306982875538" data-i18n="button.callShort">Call</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer" data-i18n="button.whatsapp">WhatsApp</a></div>
-    <script>
-      const selector = document.getElementById('languageSelect');
-      const storedLang = localStorage.getItem('ipsos-language') || 'en';
-      if (selector) {
-        selector.value = storedLang;
-        document.documentElement.lang = storedLang;
-        selector.addEventListener('change', event => {
-          localStorage.setItem('ipsos-language', event.target.value);
-          document.documentElement.lang = event.target.value;
-        });
-      }
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
