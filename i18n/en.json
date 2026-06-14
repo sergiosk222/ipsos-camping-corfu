@@ -1,0 +1,45 @@
+{
+  "nav.about": "About",
+  "nav.restaurant": "Da Marco",
+  "nav.location": "Location",
+  "nav.contact": "Contact",
+
+  "hero.eyebrow": "Ipsos · Corfu · Greece",
+  "hero.title": "Ipsos Camping Corfu",
+  "hero.subtitle": "Simple camping near Ipsos Beach",
+  "hero.description": "A calm place for camper vans, caravans and tents near Da Marco Restaurant. Please call before arrival to confirm availability.",
+
+  "button.callShort": "Call",
+  "button.callFull": "Call +30 698 287 5538",
+  "button.whatsapp": "WhatsApp",
+  "button.maps": "Get Directions",
+  "button.openMaps": "Open Google Maps",
+
+  "quick.beach.title": "Near Ipsos Beach",
+  "quick.beach.text": "Close to the sea and local facilities.",
+  "quick.camper.title": "Camper Friendly",
+  "quick.camper.text": "For camper vans, caravans and tents.",
+  "quick.restaurant.title": "Da Marco Nearby",
+  "quick.restaurant.text": "Restaurant close to the camping area.",
+
+  "about.eyebrow": "About",
+  "about.title": "A simple green base in Ipsos",
+  "about.text": "Ipsos Camping Corfu is a practical camping area in Ipsos, close to the beach and Da Marco Restaurant.",
+
+  "restaurant.eyebrow": "Da Marco Restaurant",
+  "restaurant.title": "Food nearby",
+  "restaurant.text": "Da Marco Restaurant is close to the camping area and offers Italian and Mediterranean food.",
+
+  "location.eyebrow": "Location",
+  "location.title": "Ipsos, Corfu",
+  "location.text": "Find us near Da Marco in Ipsos, Corfu. Use the map button below for directions.",
+
+  "contact.badge": "Call before arrival",
+  "contact.notice": "Availability, prices and services may vary by season.",
+  "contact.title": "Call before arrival",
+  "contact.text": "For availability, prices and current services, contact Ipsos Camping Corfu directly.",
+  "contact.secondary": "Secondary phone: +30 2661 093579",
+
+  "footer.description": "Camper Van, Caravan & Tent Camping near Ipsos Beach · Ipsos, Corfu, Greece",
+  "footer.notice": "Information, prices and availability may vary by season. Please contact us before arrival."
+}
