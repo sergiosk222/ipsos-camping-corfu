@@ -17,79 +17,92 @@
     <header class="site-header clean-header">
       <a class="brand" href="#top" aria-label="Ipsos Camping Corfu home"><span>IC</span><strong>Ipsos Camping</strong></a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#restaurant">Da Marco</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#restaurant" data-i18n="nav.restaurant">Da Marco</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a class="small-cta" href="tel:+306982875538">Call</a>
+      <div class="header-actions">
+        <label class="language-switch" aria-label="Choose language">
+          <span>Lang</span>
+          <select id="languageSelect" aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="el">Ελληνικά</option>
+            <option value="nl">Nederlands</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="ru">Русский</option>
+          </select>
+        </label>
+        <a class="small-cta" href="tel:+306982875538" data-i18n="button.callShort">Call</a>
+      </div>
     </header>
 
     <main id="top">
       <section class="clean-hero reveal">
         <div class="clean-hero-copy">
-          <p class="eyebrow">Ipsos · Corfu · Greece</p>
-          <h1>Ipsos Camping Corfu</h1>
-          <p class="lead">Simple camping near Ipsos Beach</p>
-          <p class="desc">A calm place for camper vans, caravans and tents near Da Marco Restaurant. Please call before arrival to confirm availability.</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Ipsos · Corfu · Greece</p>
+          <h1 data-i18n="hero.title">Ipsos Camping Corfu</h1>
+          <p class="lead" data-i18n="hero.subtitle">Simple camping near Ipsos Beach</p>
+          <p class="desc" data-i18n="hero.description">A calm place for camper vans, caravans and tents near Da Marco Restaurant. Please call before arrival to confirm availability.</p>
           <div class="clean-actions">
-            <a class="btn primary" href="tel:+306982875538">Call +30 698 287 5538</a>
-            <a class="btn secondary" href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer">Get Directions</a>
+            <a class="btn primary" href="tel:+306982875538" data-i18n="button.callFull">Call +30 698 287 5538</a>
+            <a class="btn secondary" href="https://wa.me/306982875538" target="_blank" rel="noreferrer" data-i18n="button.whatsapp">WhatsApp</a>
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer" data-i18n="button.maps">Get Directions</a>
           </div>
         </div>
         <div class="clean-hero-card" aria-label="Main contact information">
-          <span>Call before arrival</span>
+          <span data-i18n="contact.badge">Call before arrival</span>
           <strong>+30 698 287 5538</strong>
-          <p>Availability, prices and services may vary by season.</p>
+          <p data-i18n="contact.notice">Availability, prices and services may vary by season.</p>
         </div>
       </section>
 
       <section class="clean-info reveal" aria-label="Quick information">
-        <article><strong>Near Ipsos Beach</strong><span>Close to the sea and local facilities.</span></article>
-        <article><strong>Camper Friendly</strong><span>For camper vans, caravans and tents.</span></article>
-        <article><strong>Da Marco Nearby</strong><span>Restaurant close to the camping area.</span></article>
+        <article><strong data-i18n="quick.beach.title">Near Ipsos Beach</strong><span data-i18n="quick.beach.text">Close to the sea and local facilities.</span></article>
+        <article><strong data-i18n="quick.camper.title">Camper Friendly</strong><span data-i18n="quick.camper.text">For camper vans, caravans and tents.</span></article>
+        <article><strong data-i18n="quick.restaurant.title">Da Marco Nearby</strong><span data-i18n="quick.restaurant.text">Restaurant close to the camping area.</span></article>
       </section>
 
       <section class="clean-section reveal" id="about">
-        <p class="eyebrow">About</p>
-        <h2>A simple green base in Ipsos</h2>
-        <p>Ipsos Camping Corfu is a practical camping area in Ipsos, close to the beach and Da Marco Restaurant. It is suitable for travellers who want a simple place to stay and easy access to the local area.</p>
+        <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+        <h2 data-i18n="about.title">A simple green base in Ipsos</h2>
+        <p data-i18n="about.text">Ipsos Camping Corfu is a practical camping area in Ipsos, close to the beach and Da Marco Restaurant. It is suitable for travellers who want a simple place to stay and easy access to the local area.</p>
       </section>
 
       <section class="clean-section reveal" id="restaurant">
-        <p class="eyebrow">Da Marco Restaurant</p>
-        <h2>Food nearby</h2>
-        <p>Da Marco Restaurant is close to the camping area and offers Italian and Mediterranean food. Campers can contact the place directly before arrival.</p>
+        <p class="eyebrow" data-i18n="restaurant.eyebrow">Da Marco Restaurant</p>
+        <h2 data-i18n="restaurant.title">Food nearby</h2>
+        <p data-i18n="restaurant.text">Da Marco Restaurant is close to the camping area and offers Italian and Mediterranean food. Campers can contact the place directly before arrival.</p>
       </section>
 
       <section class="clean-section reveal" id="location">
-        <p class="eyebrow">Location</p>
-        <h2>Ipsos, Corfu</h2>
-        <p>Find us near Da Marco in Ipsos, Corfu. Use the map button below for directions.</p>
-        <a class="btn primary clean-map-btn" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer">Open Google Maps</a>
+        <p class="eyebrow" data-i18n="location.eyebrow">Location</p>
+        <h2 data-i18n="location.title">Ipsos, Corfu</h2>
+        <p data-i18n="location.text">Find us near Da Marco in Ipsos, Corfu. Use the map button below for directions.</p>
+        <a class="btn primary clean-map-btn" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer" data-i18n="button.openMaps">Open Google Maps</a>
       </section>
 
       <section class="clean-contact reveal" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Call before arrival</h2>
-        <p>For availability, prices and current services, contact Ipsos Camping Corfu directly.</p>
+        <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+        <h2 data-i18n="contact.title">Call before arrival</h2>
+        <p data-i18n="contact.text">For availability, prices and current services, contact Ipsos Camping Corfu directly.</p>
         <div class="contact-actions clean-contact-actions">
           <a class="btn primary" href="tel:+306982875538">+30 698 287 5538</a>
-          <a class="btn secondary" href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a>
-          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer">Get Directions</a>
+          <a class="btn secondary" href="https://wa.me/306982875538" target="_blank" rel="noreferrer" data-i18n="button.whatsapp">WhatsApp</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer" data-i18n="button.maps">Get Directions</a>
         </div>
-        <p class="muted">Secondary phone: +30 2661 093579</p>
+        <p class="muted" data-i18n="contact.secondary">Secondary phone: +30 2661 093579</p>
       </section>
     </main>
 
     <footer class="clean-footer">
       <strong>Ipsos Camping Corfu</strong>
-      <p>Camper Van, Caravan & Tent Camping near Ipsos Beach · Ipsos, Corfu, Greece</p>
-      <p class="muted">Information, prices and availability may vary by season. Please contact us before arrival.</p>
+      <p data-i18n="footer.description">Camper Van, Caravan & Tent Camping near Ipsos Beach · Ipsos, Corfu, Greece</p>
+      <p class="muted" data-i18n="footer.notice">Information, prices and availability may vary by season. Please contact us before arrival.</p>
     </footer>
 
-    <div class="clean-bottom-cta"><a href="tel:+306982875538">Call</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a></div>
+    <div class="clean-bottom-cta"><a href="tel:+306982875538" data-i18n="button.callShort">Call</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer" data-i18n="button.whatsapp">WhatsApp</a></div>
     <script src="script.js"></script>
   </body>
 </html>
