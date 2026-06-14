@@ -1,0 +1,45 @@
+{
+  "nav.about": "О месте",
+  "nav.restaurant": "Da Marco",
+  "nav.location": "Локация",
+  "nav.contact": "Контакт",
+
+  "hero.eyebrow": "Ипсос · Корфу · Греция",
+  "hero.title": "Ipsos Camping Corfu",
+  "hero.subtitle": "Простой кемпинг рядом с Ipsos Beach",
+  "hero.description": "Спокойное место для кемперов, караванов и палаток рядом с Da Marco. Позвоните перед приездом, чтобы уточнить наличие мест.",
+
+  "button.callShort": "Позвонить",
+  "button.callFull": "Позвонить +30 698 287 5538",
+  "button.whatsapp": "WhatsApp",
+  "button.maps": "Маршрут",
+  "button.openMaps": "Открыть Google Maps",
+
+  "quick.beach.title": "Рядом с Ipsos Beach",
+  "quick.beach.text": "Близко к морю и местной инфраструктуре.",
+  "quick.camper.title": "Подходит для кемперов",
+  "quick.camper.text": "Для camper vans, караванов и палаток.",
+  "quick.restaurant.title": "Da Marco рядом",
+  "quick.restaurant.text": "Ресторан рядом с зоной кемпинга.",
+
+  "about.eyebrow": "О месте",
+  "about.title": "Зелёная база в Ipsos",
+  "about.text": "Ipsos Camping Corfu — практичная зона кемпинга в Ipsos, рядом с пляжем и рестораном Da Marco.",
+
+  "restaurant.eyebrow": "Ресторан Da Marco",
+  "restaurant.title": "Еда рядом",
+  "restaurant.text": "Da Marco находится рядом с кемпингом и предлагает итальянскую и средиземноморскую кухню.",
+
+  "location.eyebrow": "Локация",
+  "location.title": "Ipsos, Corfu",
+  "location.text": "Мы находимся рядом с Da Marco в Ipsos, Corfu. Используйте кнопку карты для маршрута.",
+
+  "contact.badge": "Позвоните перед приездом",
+  "contact.notice": "Наличие мест, цены и услуги могут отличаться в зависимости от сезона.",
+  "contact.title": "Позвоните перед приездом",
+  "contact.text": "Для уточнения наличия мест, цен и текущих услуг свяжитесь с Ipsos Camping Corfu напрямую.",
+  "contact.secondary": "Второй телефон: +30 2661 093579",
+
+  "footer.description": "Camper Van, Caravan & Tent Camping рядом с Ipsos Beach · Ipsos, Corfu, Greece",
+  "footer.notice": "Информация, цены и наличие мест могут меняться по сезону. Свяжитесь с нами перед приездом."
+}
