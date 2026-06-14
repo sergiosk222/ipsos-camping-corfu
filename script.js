@@ -25,3 +25,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+async function applyLanguage(language) {
+  try {
+    const response = await fetch(`i18n/${language}.json`);
+    const dictionary = await response.json();
+
+    document.documentElement.lang = language;
+
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+
+      if (dictionary[key]) {
+        element.textContent = dictionary[key];
+      }
+    });
+
+    localStorage.setItem('ipsos-language', language);
+  } catch (error) {
+    console.warn('Language file not found:', language);
+  }
+}
+
+const languageSelect = document.getElementById('languageSelect');
+const savedLanguage = localStorage.getItem('ipsos-language') || 'en';
+
+if (languageSelect) {
+  languageSelect.value = savedLanguage;
+  applyLanguage(savedLanguage);
+
+  languageSelect.addEventListener('change', event => {
+    applyLanguage(event.target.value);
+  });
+}
