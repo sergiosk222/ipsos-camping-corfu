@@ -103,6 +103,18 @@
     </footer>
 
     <div class="clean-bottom-cta"><a href="tel:+306982875538" data-i18n="button.callShort">Call</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer" data-i18n="button.whatsapp">WhatsApp</a></div>
+    <script>
+      const selector = document.getElementById('languageSelect');
+      const storedLang = localStorage.getItem('ipsos-language') || 'en';
+      if (selector) {
+        selector.value = storedLang;
+        document.documentElement.lang = storedLang;
+        selector.addEventListener('change', event => {
+          localStorage.setItem('ipsos-language', event.target.value);
+          document.documentElement.lang = event.target.value;
+        });
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
