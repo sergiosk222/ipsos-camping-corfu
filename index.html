@@ -19,9 +19,10 @@
         <a href="#facilities">Facilities</a>
         <a href="#restaurant">Restaurant</a>
         <a href="#location">Location</a>
+        <a href="#booking">Booking</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="small-cta" href="tel:+306982875538">Call</a>
+      <a class="small-cta" href="#booking">Book</a>
     </header>
 
     <main id="top">
@@ -34,7 +35,7 @@
           <p class="lead">Camper Van, Caravan & Tent Camping near Ipsos Beach</p>
           <p class="desc">A simple and convenient camping spot in Ipsos, Corfu — close to the beach, surrounded by greenery, and next to Da Marco Restaurant.</p>
           <div class="actions">
-            <a class="btn primary" href="tel:+306982875538">Call Now</a>
+            <a class="btn primary" href="#booking">Book Your Stay</a>
             <a class="btn secondary" href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a>
             <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Da+Marco+Ipsos+Corfu" target="_blank" rel="noreferrer">Get Directions</a>
           </div>
@@ -117,6 +118,86 @@
         </div>
       </section>
 
+      <section class="booking-section reveal" id="booking">
+        <div class="booking-heading">
+          <p class="eyebrow">Booking request</p>
+          <h2>Choose your dates and camping place</h2>
+          <p>This is a booking request prototype. Availability is not guaranteed until the owner confirms it.</p>
+        </div>
+
+        <div class="booking-layout">
+          <div class="booking-card booking-panel">
+            <h3>1. Select your dates</h3>
+            <div class="date-grid">
+              <label>Check-in<input type="date" id="checkIn" /></label>
+              <label>Check-out<input type="date" id="checkOut" /></label>
+            </div>
+            <div class="booking-summary-mini">
+              <span id="nightsCount">Select dates</span>
+              <span id="selectedPlaceLabel">No place selected</span>
+            </div>
+          </div>
+
+          <div class="booking-card booking-map-panel">
+            <div class="map-title-row">
+              <h3>2. Choose a place</h3>
+              <p>Tap a green place to select it.</p>
+            </div>
+
+            <div class="pitch-map" aria-label="Interactive camping places map">
+              <div class="zone-label camper-zone">Camper zone</div>
+              <button type="button" class="pitch available" data-place="A1" data-type="Camper" data-status="available">A1<small>Camper</small></button>
+              <button type="button" class="pitch booked" data-place="A2" data-type="Camper" data-status="booked" disabled>A2<small>Booked</small></button>
+              <button type="button" class="pitch available" data-place="A3" data-type="Camper" data-status="available">A3<small>Camper</small></button>
+              <button type="button" class="pitch pending" data-place="A4" data-type="Camper" data-status="pending" disabled>A4<small>Pending</small></button>
+              <button type="button" class="pitch available" data-place="A5" data-type="Camper" data-status="available">A5<small>Camper</small></button>
+              <button type="button" class="pitch available" data-place="B1" data-type="Caravan" data-status="available">B1<small>Caravan</small></button>
+              <button type="button" class="pitch unavailable" data-place="B2" data-type="Caravan" data-status="unavailable" disabled>B2<small>Closed</small></button>
+              <button type="button" class="pitch available" data-place="B3" data-type="Caravan" data-status="available">B3<small>Caravan</small></button>
+              <button type="button" class="pitch booked" data-place="B4" data-type="Caravan" data-status="booked" disabled>B4<small>Booked</small></button>
+              <button type="button" class="pitch available" data-place="B5" data-type="Caravan" data-status="available">B5<small>Caravan</small></button>
+
+              <div class="zone-label tent-zone">Tent garden</div>
+              <button type="button" class="pitch available tent" data-place="T1" data-type="Tent" data-status="available">T1<small>Tent</small></button>
+              <button type="button" class="pitch available tent" data-place="T2" data-type="Tent" data-status="available">T2<small>Tent</small></button>
+              <button type="button" class="pitch pending tent" data-place="T3" data-type="Tent" data-status="pending" disabled>T3<small>Pending</small></button>
+              <button type="button" class="pitch available tent" data-place="T4" data-type="Tent" data-status="available">T4<small>Tent</small></button>
+            </div>
+
+            <div class="legend">
+              <span><i class="dot available-dot"></i>Available</span>
+              <span><i class="dot booked-dot"></i>Booked</span>
+              <span><i class="dot pending-dot"></i>Pending</span>
+              <span><i class="dot closed-dot"></i>Unavailable</span>
+            </div>
+          </div>
+
+          <form class="booking-card booking-form" id="bookingForm">
+            <h3>3. Send your request</h3>
+            <input type="hidden" id="selectedPlace" />
+            <input type="hidden" id="selectedPlaceType" />
+            <label>Name<input type="text" id="guestName" placeholder="Your name" required /></label>
+            <label>Phone / WhatsApp<input type="tel" id="guestPhone" placeholder="+30 ..." required /></label>
+            <label>Email<input type="email" id="guestEmail" placeholder="your@email.com" /></label>
+            <label>Message<textarea id="guestMessage" rows="4" placeholder="Tell us if you have a camper van, caravan, tent, pets, or special request."></textarea></label>
+            <button class="btn primary" type="submit">Prepare Booking Request</button>
+            <p class="booking-note">The request will open WhatsApp with a prepared message. Automatic database booking can be added later.</p>
+          </form>
+        </div>
+
+        <div class="booking-result" id="bookingResult" hidden>
+          <div>
+            <p class="eyebrow">Request ready</p>
+            <h3>Your booking request is prepared</h3>
+            <p id="bookingResultText"></p>
+          </div>
+          <div class="booking-result-actions">
+            <a class="btn primary" id="bookingWhatsApp" href="#" target="_blank" rel="noreferrer">Send on WhatsApp</a>
+            <button class="btn ghost" id="copyBooking" type="button">Copy request</button>
+          </div>
+        </div>
+      </section>
+
       <section class="section reveal" id="gallery">
         <p class="eyebrow">Gallery</p>
         <h2>Real photos can be added later</h2>
@@ -168,7 +249,7 @@
       <p class="muted">Information, prices and availability may vary by season. Please contact us before arrival.</p>
     </footer>
 
-    <div class="mobile-contact"><a href="tel:+306982875538">Call</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a></div>
+    <div class="mobile-contact"><a href="#booking">Book</a><a href="https://wa.me/306982875538" target="_blank" rel="noreferrer">WhatsApp</a></div>
     <script src="script.js"></script>
   </body>
 </html>
