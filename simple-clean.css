@@ -1,0 +1,232 @@
+body {
+  background:
+    radial-gradient(circle at 80% 5%, rgba(216, 181, 106, 0.13), transparent 28rem),
+    radial-gradient(circle at 10% 18%, rgba(126, 212, 196, 0.11), transparent 28rem),
+    linear-gradient(180deg, #07160f 0%, #0f2a1e 48%, #07160f 100%);
+}
+
+.clean-header nav {
+  gap: 18px;
+}
+
+.clean-hero {
+  position: relative;
+  width: min(1120px, calc(100% - 32px));
+  min-height: 86vh;
+  margin: 0 auto;
+  padding: 145px 0 70px;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.clean-hero::before {
+  content: '';
+  position: absolute;
+  inset: 115px 0 42px;
+  z-index: -1;
+  border-radius: 44px;
+  background:
+    linear-gradient(135deg, rgba(5, 18, 13, 0.72), rgba(5, 18, 13, 0.18)),
+    radial-gradient(circle at 80% 25%, rgba(216, 181, 106, 0.26), transparent 13rem),
+    linear-gradient(145deg, rgba(126, 212, 196, 0.12), rgba(100, 123, 63, 0.2));
+  border: 1px solid var(--line);
+  box-shadow: 0 38px 120px rgba(0, 0, 0, 0.3);
+}
+
+.clean-hero h1 {
+  max-width: 760px;
+}
+
+.clean-hero .desc {
+  max-width: 640px;
+}
+
+.clean-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.clean-hero-card,
+.clean-info article,
+.clean-section,
+.clean-contact {
+  border: 1px solid var(--line);
+  background: rgba(255, 248, 234, 0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 30px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+
+.clean-hero-card {
+  padding: 30px;
+}
+
+.clean-hero-card span {
+  display: inline-flex;
+  color: var(--gold);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin-bottom: 18px;
+}
+
+.clean-hero-card strong {
+  display: block;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.clean-hero-card p,
+.clean-section p,
+.clean-contact p {
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+.clean-info {
+  width: min(1120px, calc(100% - 32px));
+  margin: -35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  position: relative;
+  z-index: 5;
+}
+
+.clean-info article {
+  padding: 22px;
+}
+
+.clean-info strong {
+  display: block;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+
+.clean-info span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.clean-section,
+.clean-contact {
+  width: min(920px, calc(100% - 32px));
+  margin: 80px auto 0;
+  padding: 34px;
+}
+
+.clean-section h2,
+.clean-contact h2 {
+  margin-bottom: 18px;
+}
+
+.clean-map-btn {
+  margin-top: 16px;
+}
+
+.clean-contact {
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(216, 181, 106, 0.15), transparent 18rem),
+    rgba(255, 248, 234, 0.08);
+}
+
+.clean-contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 24px auto 0;
+}
+
+.clean-footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 70px 0 105px;
+}
+
+.clean-bottom-cta {
+  position: fixed;
+  z-index: 50;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: none;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(8, 27, 18, 0.92);
+  backdrop-filter: blur(16px);
+}
+
+.clean-bottom-cta a {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 46px;
+  border-radius: 16px;
+  font-weight: 900;
+}
+
+.clean-bottom-cta a:first-child {
+  background: var(--gold);
+  color: #10261c;
+}
+
+.clean-bottom-cta a:last-child {
+  background: rgba(126, 212, 196, 0.16);
+  color: var(--cream);
+  border: 1px solid rgba(126, 212, 196, 0.38);
+}
+
+@media (max-width: 900px) {
+  .clean-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .clean-info {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .clean-bottom-cta {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .clean-hero {
+    padding-top: 120px;
+  }
+
+  .clean-hero::before {
+    inset: 92px -8px 28px;
+    border-radius: 30px;
+  }
+
+  .clean-actions,
+  .clean-contact-actions {
+    flex-direction: column;
+  }
+
+  .clean-actions .btn,
+  .clean-contact-actions .btn {
+    width: 100%;
+  }
+
+  .clean-section,
+  .clean-contact,
+  .clean-hero-card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+}
